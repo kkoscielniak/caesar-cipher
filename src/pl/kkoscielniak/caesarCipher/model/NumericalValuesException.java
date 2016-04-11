@@ -14,5 +14,4 @@ public class NumericalValuesException extends Exception {
     public NumericalValuesException() {
         System.out.println("Sentence contains non-alphabet characters!");
     }
-    
 }
