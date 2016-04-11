@@ -29,9 +29,7 @@ public class Controller {
             
             view.printMessage(encodedSentence);
             
-        } catch (NumericalValuesException e) {
-            
-        } catch (OutOfBoundsException e) {
+        } catch (NumericalValuesException | OutOfBoundsException e) {
             
         }
     }

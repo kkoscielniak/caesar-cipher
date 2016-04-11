@@ -13,10 +13,7 @@ import pl.kkoscielniak.caesarCipher.view.View;
  */
 public class OutOfBoundsException extends Exception {
     
-//    View view = new View();
-   
     public OutOfBoundsException() {
-//        view.printMessage("The string is out of range.");
         System.out.println("The string is out of range");
     }
     

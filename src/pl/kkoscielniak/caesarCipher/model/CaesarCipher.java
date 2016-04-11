@@ -24,11 +24,15 @@ public class CaesarCipher {
         }
             
         for (char i : enc.toCharArray()) {
-            if (Character.isLetter(i)) {
-                if (Character.isUpperCase(i)) {
-                    encoded.append((char) ('A' + (i - 'A' + offset) % 26 ));
+            if (Character.isLetter(i) || i == ' ') {
+                if (i != ' ') {
+                    if (Character.isUpperCase(i)) {
+                        encoded.append((char) ('A' + (i - 'A' + offset) % 26 ));
+                    } else {
+                        encoded.append((char) ('a' + (i - 'a' + offset) % 26 ));
+                    }
                 } else {
-                    encoded.append((char) ('a' + (i - 'a' + offset) % 26 ));
+                    encoded.append(' ');
                 }
             } else {
                 throw new NumericalValuesException();
