@@ -47,6 +47,7 @@ public class CaesarCipher {
      * @param offset Offset of the initial encryption
      * @return decoded string 
      * @throws NumericalValuesException 
+     * @throws pl.kkoscielniak.caesarCipher.model.OutOfBoundsException 
      */
     public static String decode(String enc, int offset) 
             throws NumericalValuesException, OutOfBoundsException {

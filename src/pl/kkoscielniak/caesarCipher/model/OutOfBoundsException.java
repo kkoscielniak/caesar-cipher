@@ -8,13 +8,18 @@ package pl.kkoscielniak.caesarCipher.model;
 import pl.kkoscielniak.caesarCipher.view.View;
 
 /**
- *
+ * Thrown if the input is too long or too short
  * @author krystian
  */
 public class OutOfBoundsException extends Exception {
     
+    /**
+     * View instance
+     */
+    View v = new View();
+    
     public OutOfBoundsException() {
-        System.out.println("The string is out of range");
+        v.printMessage("The string is out of range\n");
     }
     
 }
